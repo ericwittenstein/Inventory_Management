@@ -1,1 +1,1 @@
-1234
+const User = require('./User');2
