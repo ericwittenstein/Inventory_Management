@@ -28,7 +28,6 @@ Item.init(
 		},
 		employee_id: {
 			type: DataTypes.INTEGER,
-			allowNull: true,
 			references: {
 				model: "employee",
 				key: "id",
@@ -37,6 +36,7 @@ Item.init(
 	},
 	{
 		sequelize,
+		freezeTableName:true,
 		timestamps: false,
 		underscored: true,
 		modelName: "item",

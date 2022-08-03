@@ -2,7 +2,8 @@
 	{
 		"item_name": "Utility Cart",
 		"item_description": "4 wheels, 3 shelves, 27 in long, 16 in wide, 32 in tall",
-		"item_checked_in": true
+		"item_checked_in": false,
+		"employee_id": 1
 	},
 	{
 		"item_name": "Coffee Urn",
@@ -31,11 +32,12 @@
     {
         "item_name": "Large Brewing Machine",
         "item_description": "Machine for brewing coffee into large coffee urn, holds 1 large filter bag per 500oz",
-        "item_checked_in": true
+        "item_checked_in": false,
+		"employee_id": 1
     },
     {
         "item_name": "Fuel Can, 6hr",
-        "item_description": "Fuel can for warming tray, should last 6 hours, posibbly less, so be sure to bring extras to be safe. WARNING: Flammable (obviously), exercise appropriate safety measures when igniting and be sure you know where the nearest fire extinguisher is. Time off for burns sustained while being stupid will not be PTO.",
+        "item_description": "Fuel can for warming tray, should last 6 hours, posibbly less, so be sure to bring extras to be safe. WARNING: Flammable (obviously).",
         "item_checked_in": false,
         "employee_id": 2
     }
