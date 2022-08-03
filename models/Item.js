@@ -36,7 +36,7 @@ Item.init(
 	},
 	{
 		sequelize,
-		freezeTableName:true,
+		freezeTableName: true,
 		timestamps: false,
 		underscored: true,
 		modelName: "item",
