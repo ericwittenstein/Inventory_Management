@@ -2,7 +2,6 @@
 
 // Packages
 const router = require("express").Router();
-const sequelize = require("../../config/connection");
 
 // Employee Model
 const { Employee } = require("../../models");
