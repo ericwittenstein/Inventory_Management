@@ -7,6 +7,11 @@ router.get("/", async (req, res) => {
 	res.render("homepage");
 });
 
+// route to render the add employee page
+router.get("/employee_add", async (req, res) => {
+	res.render("employee_create");
+});
+
 // route to render the table of employees from the db
 router.get("/employees", async (req, res) => {
 	try {
