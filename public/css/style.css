@@ -1,5 +1,9 @@
 /* custom css goes here */
 
+body {
+    padding: 2%;
+}
+
 nav {
 	height: 30px;
 	line-height: 30px;
@@ -29,5 +33,6 @@ nav .brand-logo {
 	nav a.sidenav-trigger i {
 		height: 30px;
 		line-height: 30px;
+        font-size: x-small;
 	}
 }
