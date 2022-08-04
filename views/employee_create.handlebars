@@ -1,33 +1,28 @@
 <!-- Instructions -->
 <h3 class="container">Please enter data for new employee:</h3>
 
-<!-- First Name -->
-<div class="row container">
-	<div class="input-field col s6">
-		<input
-			placeholder="First Name"
-			id="first_name"
-			type="text"
-			class="validate"
-		/>
-		<label class="active" for="first_name">First Name</label>
+<form action="employees" id="addForm">
+	<!-- First Name -->
+	<div class="row container">
+		<div class="input-field col s6">
+			<input placeholder="First Name" type="text" id="first_name" />
+			<label class="active form-input" for="first_name">First Name</label>
+		</div>
 	</div>
-</div>
 
-<!-- Last Name -->
-<div class="row container">
-	<div class="input-field col s6">
-		<input
-			placeholder="Last Name"
-			id="last_name"
-			type="text"
-			class="validate"
-		/>
-		<label class="active" for="last_name">Last Name</label>
+	<!-- Last Name -->
+	<div class="row container">
+		<div class="input-field col s6">
+			<input placeholder="Last Name" type="text" id="last_name" />
+			<label class="active" for="last_name">Last Name</label>
+		</div>
 	</div>
-</div>
 
-<!-- Submit Button -->
-<div class="row container">
-	<button class="waves-effect waves-light btn center-align">Submit</button>
-</div>
+	<!-- Submit Button -->
+	<div class="row container">
+		<button id="add-employee-btn" class="waves-effect waves-light btn center-align">Submit</button>
+	</div>
+</form>
+
+<!-- Link to employee_create.js -->
+<script src="/js/employee_create.js"></script>

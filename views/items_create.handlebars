@@ -1,33 +1,28 @@
 <!-- Instructions -->
 <h3 class="container">Please enter data for new the new inventory item:</h3>
 
-<!-- Item Name -->
-<div class="row container">
-	<div class="input-field col s6">
-		<input
-			placeholder="Item Name"
-			id="item_name"
-			type="text"
-			class="validate"
-		/>
-		<label class="active" for="item_name">Item Name</label>
+<form action="items" id="addForm">
+	<!-- Item Name -->
+	<div class="row container">
+		<div class="input-field col s6">
+			<input placeholder="Item Name" id="item_name" type="text" class="validate" />
+			<label class="active" for="item_name">Item Name</label>
+		</div>
 	</div>
-</div>
 
-<!-- Item Description -->
-<div class="row container">
-	<div class="input-field col s6">
-		<input
-			placeholder="Item Description"
-			id="item_descr"
-			type="text"
-			class="validate"
-		/>
-		<label class="active" for="item_descr">Item Description</label>
+	<!-- Item Description -->
+	<div class="row container">
+		<div class="input-field col s6">
+			<input placeholder="Item Description" id="item_descr" type="text" class="validate" />
+			<label class="active" for="item_descr">Item Description</label>
+		</div>
 	</div>
-</div>
 
-<!-- Submit Button -->
-<div class="row container">
-	<button class="waves-effect waves-light btn center-align">Submit</button>
-</div>
+	<!-- Submit Button -->
+	<div class="row container">
+		<button id="add-item-btn" class="waves-effect waves-light btn center-align">Submit</button>
+	</div>
+</form>
+
+<!-- Link to items_create.js -->
+<script src="/js/items_create.js"></script>
