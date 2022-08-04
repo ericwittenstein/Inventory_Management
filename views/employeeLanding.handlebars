@@ -10,7 +10,7 @@
 				<td>First Name</td>
 				<td>Last Name</td>
 			</tr>
-			{{#each data}}
+			{{#each employees as |employee|}}
 				<tr>
 					<td>{{this.id}}</td>
 					<td>{{this.first_name}}</td>
