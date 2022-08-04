@@ -12,13 +12,12 @@ var data = {
     footer: " Footer Area"
 };
 var template = Handlebars.compile(document.querySelector("#template")?.innerHTML);
-var filled = template(data):
-document.querySelector("#output").innerHTML = filled
-}
+var filled = template(data) 
+document.querySelector("#output").innerHTML = filled}
+
 
        
 
 
 
   
-

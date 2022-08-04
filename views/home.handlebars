@@ -1,2 +1,25 @@
 {{!-- this is the handlebars file for the main landing page upon opening the app--}}
-<h1> this is the HomePage</h1>
+<h<!DOCTYPE html>
+<html>
+<head>
+        <title>Inventory Managment</title>
+</head>
+<body>
+ <script type ="text/x-handlebars-template" id="template">
+ <h1>{{toUpperCase title}}</h1>
+ <ol>
+    {{#each list}}
+    <li> {{this.name}} </li>
+    {{/each}}
+ </ol>
+ <p>{{footer</p>
+ </script>
+ <div id="output">
+
+ </div>
+ <button onclick="fill_template()">
+    Generate Table
+ </button>
+ 
+</body>
+</html>
