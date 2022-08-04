@@ -2,19 +2,12 @@
 	"name": "inventory-management",
 	"version": "1.0.0",
 	"description": "",
-	"engines": {
-		"node": "16.16.0"
-	},
 	"main": "server.js",
 	"scripts": {
 		"seeds": "node seeds/seed.js",
-		"watch": "nodemon server.js",
-		"dev": "react-scripts start",
-		"start": "serve -s build",
-		"build": "react-scripts build",
-		"test": "react-scripts test --env=jsdom",
-		"eject": "react-scripts eject",
-		"heroku-postbuild": "npm run build"
+		"start": "node server.js",
+		"watch": "nodemon server.js"
+		
 	},
 	"author": "",
 	"license": "ISC",
