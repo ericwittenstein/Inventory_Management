@@ -17,12 +17,12 @@
 					<td>{{this.id}}</td>
 					<td>{{this.item_name}}</td>
 					<td>{{this.item_description}}</td>
-					{{#if this.item_checked_in}}
-						<td class="green">IN</td>
-						<td>N/A</td>
-						{{#else}}
-							<td class="red white-text">OUT</td>
+					{{#if !(this.item_checked_in)}}
+						<td class="red white-text">OUT</td>
 							<td>{{this.employee_id}}</td>
+						{{#else}}
+							<td class="green">IN</td>
+							<td>N/A</td>
 					{{/if}}
 				</tr>
 			{{/each}}
