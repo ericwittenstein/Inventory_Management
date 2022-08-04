@@ -1,1 +1,33 @@
 /* custom css goes here */
+
+nav {
+	height: 30px;
+	line-height: 30px;
+}
+
+nav i,
+nav [class^="mdi-"],
+nav [class*="mdi-"],
+nav i.material-icons {
+	height: 30px;
+	line-height: 30px;
+}
+
+nav .button-collapse i {
+	height: 30px;
+	line-height: 30px;
+}
+
+nav .brand-logo {
+	font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 601px) {
+	nav,
+	nav .nav-wrapper i,
+	nav a.sidenav-trigger,
+	nav a.sidenav-trigger i {
+		height: 30px;
+		line-height: 30px;
+	}
+}
