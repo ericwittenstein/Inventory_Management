@@ -1,4 +1,3 @@
-// const { response } = require("express");
 const addEmpBtn = document.querySelector('#addForm');
 
 // Function that adds employee to database and renders user back to the employees list

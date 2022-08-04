@@ -1,7 +1,6 @@
-// const { response } = require("express");
 const addItBtn = document.querySelector('#addForm');
 
-// Function that adds employee to database and renders user back to the employees list
+// Function that adds items to database and renders user back to the items list
 const addItemBtn = async (e) => {
     // Prevent default form setting
     e.preventDefault();
@@ -14,7 +13,7 @@ const addItemBtn = async (e) => {
 
     // If user inputs data
     if(item_name && item_description) {
-        // fetch that calls post route for employees
+        // fetch that calls post route for items
         const response = await fetch('/api/items', {
             method: 'POST',
             body: JSON.stringify({ item_name, item_description }),
@@ -23,7 +22,7 @@ const addItemBtn = async (e) => {
 
         // If user response is accepted...
         if(response.ok) {
-            // redirect to employees page
+            // redirect to items page
             document.location.replace('/items');
         } else (error) => {
             // Error handling

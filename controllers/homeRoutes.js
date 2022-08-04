@@ -12,6 +12,10 @@ router.get("/employee_add", async (req, res) => {
 	res.render("employee_create");
 });
 
+// route to render the add item page
+router.get("/item_add", async (req, res) => {
+	res.render("items_create");
+});
 // route to render the table of employees from the db
 router.get("/employees", async (req, res) => {
 	try {
