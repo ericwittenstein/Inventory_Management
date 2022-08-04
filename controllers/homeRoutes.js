@@ -3,28 +3,24 @@ const router = require("express").Router();
 
 // route to render the table of employees from the db
 router.get("/employees", async (req, res) => {
-	db.query("QUERY TEXT GOES HERE", (error, res, fields) => {
-		if (error) {
-			res.status(500);
-			res.send(error);
-		} else {
-			res.status(200);
-			res.render("employeeLanding", { data: res });
-		}
-	});
+	try {
+		db.query("QUERY TEXT GOES HERE", (res, fields) => {
+			res.status(200).render("employeeLanding", { data: res });
+		});
+	} catch (error) {
+		res.status(500).json(error);
+	}
 });
 
 // route to render the table of items from the db
 router.get("/items", async (req, res) => {
-	db.query("QUERY TEXT GOES HERE", (error, res, fields) => {
-		if (error) {
-			res.status(500);
-			res.send(error);
-		} else {
-			res.status(200);
-			res.render("itemLanding", { data: res });
-		}
-	});
+	try {
+		db.query("QUERY TEXT GOES HERE", (res, fields) => {
+			res.status(200).render("itemLanding", { data: res });
+		});
+	} catch (error) {
+		res.status(500).json(error);
+	}
 });
 
 module.exports = router;
