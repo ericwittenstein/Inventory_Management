@@ -4,7 +4,7 @@
 
 This application is a an inventory management system for a catering company. This app will be deployed through Heroku, as it runs on a full front- and back-end MVC structure.
 
-**The deployed app can be found [HERE](link)**
+**The deployed app can be found [HERE](https://inventorymanagement.herokuapp.com/)**
 
 ## Table of Contents 
 
@@ -28,7 +28,7 @@ npm i
 
 ## Usage
 
-The deployed app can be found [HERE](link here).
+The deployed app can be found [HERE](https://inventorymanagement.herokuapp.com/).
 
 ## GitHub Repo
 
