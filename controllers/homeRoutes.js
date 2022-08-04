@@ -15,24 +15,40 @@ router.get("/employee_add", async (req, res) => {
 // route to render the table of employees from the db
 router.get("/employees", async (req, res) => {
 	try {
+		// get data
 		const emplData = await Employee.findAll();
-		// const newEmplData = res.json(emplData);
+
+		// serialize data for template
+		const employees = emplData.map((employee) =>
+			employee.get({ plain: true })
+		);
+
+		// send serialized data to template
 		res.status(200);
-		return res.render("employeeLanding", { data: emplData });
-	} catch (error) {
-		res.status(500).json(error);
+		res.render("employeeLanding", {
+			employees,
+		});
+	} catch (err) {
+		res.status(500).json(err);
 	}
 });
 
 // route to render the table of items from the db
 router.get("/items", async (req, res) => {
 	try {
+		// get data
 		const itemData = await Item.findAll();
-		// const newItemData = res.json(itemData);
+
+		// serialize data for template
+		const items = itemData.map((item) => item.get({ plain: true }));
+
+		// send serialized data to template
 		res.status(200);
-		return res.render("itemLanding", { data: itemData });
-	} catch (error) {
-		res.status(500).json(error);
+		res.render("itemLanding", {
+			items,
+		});
+	} catch (err) {
+		res.status(500).json(err);
 	}
 });
 

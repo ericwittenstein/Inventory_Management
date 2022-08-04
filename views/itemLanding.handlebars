@@ -1,7 +1,7 @@
 {{! this file will handle the rendering for the all items view, which should load on clicking the items button in the navbar }}
 
 <div class="container">
-	<h2 class="container">ALL ITEMS</h2>
+	<h2 class="center-align">ALL ITEMS</h2>
 
 	<table class="striped responsive-table">
 		<tbody>
@@ -12,12 +12,18 @@
 				<td>Item Checked In/Out</td>
 				<td>Checked out by Employee</td>
 			</tr>
-			{{#each data}}
+			{{#each items as |item|}}
 				<tr>
 					<td>{{this.id}}</td>
 					<td>{{this.item_name}}</td>
 					<td>{{this.item_description}}</td>
-					{{itemchecker}}
+					{{#if this.item_checked_in}}
+						<td class="green">IN</td>
+						<td>N/A</td>
+					{{else}}
+						<td class="red white-text">OUT</td>
+						<td>{{this.employee_id}}</td>
+					{{/if}}
 				</tr>
 			{{/each}}
 		</tbody>
