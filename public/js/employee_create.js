@@ -1,30 +1,30 @@
 // const { response } = require("express");
-const addEmpBtn = document.querySelector('#add-employee-btn');
+const addEmpBtn = document.querySelector('#addForm');
 
 const addEmployeeBtn = async (e) => {
     // Prevent default form setting
     e.preventDefault();
 
     // Bring in input data
-    const firstName = document.querySelector('#first-name').value;
-    console.log(firstName);
-    const lastName = document.querySelector('#last-name').value.trim();
-    console.log(lastName);
+    const first_name = document.querySelector('#first_name').value.trim();
+    console.log(first_name);
+    const last_name = document.querySelector('#last_name').value.trim();
+    console.log(last_name);
 
     // If user inputs data
-    if(firstName && lastName) {
-        const response = await fetch('/employees', {
+    if(first_name && last_name) {
+        const response = await fetch('/api/employees', {
             method: 'POST',
-            body: JSON.stringify({ firstName, lastName }),
+            body: JSON.stringify({ first_name, last_name }),
             headers: { 'Content-Type': 'application/json'}
         });
 
         if(response.ok) {
             document.location.replace('/employees');
+        } else (error) => {
+            console.log(error)
         }
-    } else {
-        console.log("first name and last name not entered")
-    }
+    } 
 
     // if(response.ok) {
     //     document.location.replace('/employees');
@@ -32,7 +32,7 @@ const addEmployeeBtn = async (e) => {
 }
 
 if(addEmpBtn) {
-    addEmpBtn.addEventListener('click', addEmployeeBtn);
+    addEmpBtn.addEventListener('submit', addEmployeeBtn);
 } else {
     console.log("button does not exist")
 }
