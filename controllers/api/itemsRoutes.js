@@ -3,7 +3,7 @@
 // Packages
 const router = require("express").Router();
 
-// Employee Model
+// Item Model
 const { Item } = require("../../models");
 
 // Post route to create an employee

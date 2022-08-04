@@ -1,28 +1,34 @@
-{{!-- this is the baseline handlebars template that handles the html that all the handlebars will render with; should include html head, css links, etc. --}}
-<!DOCTYPE html>
+{{! this is the baseline handlebars template that handles the html that all the handlebars will render with; should include html head, css links, etc. }}
+
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inventory Management</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="/css/materialize.css">
-</head>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Inventory Management</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+	</head>
 
- <body>
-  <nav>
-    <div class="nav-wrapper">
-      {{{body}}}
-      <a href="#" class="brand-logo">Logo | Inventory Management</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Items</a></li>
-        <li><a href="badges.html">Employees</a></li>
-      </ul>
-    </div>
-  </nav>
-  <p>Welcome to your inventory management system! Please select a page from the navbar to access your warehouse information!</p>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
- </body>
+	<body>
+		<nav>
+			<div class="nav-wrapper">
+				{{{body}}}
+				<a href="#" class="brand-logo">Logo | Inventory Management</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="text.html">Items</a></li>
+					<li><a href="text.html">Employees</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			{{body}}
+		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+		></script>
+	</body>
 
 </html>

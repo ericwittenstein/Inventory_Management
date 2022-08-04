@@ -3,7 +3,7 @@
 <div class="container">
 	<h2 class="container">ALL ITEMS</h2>
 
-	<table>
+	<table class="striped responsive-table">
 		<tbody>
 			<tr>
 				<td>Item Number</td>
@@ -17,14 +17,7 @@
 					<td>{{this.id}}</td>
 					<td>{{this.item_name}}</td>
 					<td>{{this.item_description}}</td>
-					{{#if this.item_checked_in}}
-						<td class="green">IN</td>
-						<td>N/A</td>
-						{{#else}}
-							<td class="red white-text">OUT</td>
-							<td>{{this.employee_id}}</td>
-						{{/else}}
-					{{/if}}
+					{{itemchecker}}
 				</tr>
 			{{/each}}
 		</tbody>
