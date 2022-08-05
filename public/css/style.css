@@ -1,5 +1,9 @@
 /* custom css goes here */
 
+.brand-logo {
+    padding-left: 12px !important;
+}
+
 .blue.lighten-4 {
     background-color: #4b9cd3 !important;
 }
