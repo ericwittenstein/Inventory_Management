@@ -9,7 +9,7 @@ router.get("/", async (req, res) => {
 
 // route to render the add employee page
 router.get("/employee_add", async (req, res) => {
-	res.render("employee_create");
+	res.render("employees_create");
 });
 
 // route to render the add item page
