@@ -1,12 +1,19 @@
-<!-- In or out of house -->
-{{#if item_checked_in}}
-	<div class="container">
-		<a class="waves-effect waves-light btn card-panel purple darken-3">Check
-			Out</a>
-	</div>
-{{else}}
-	<div class="container">
-		<a class="waves-effect waves-light btn card-panel purple darken-3">Check
-			In</a>
-	</div>
-{{/if}}
+
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Type Here" id="item_number" type="text" class="validate">
+          <label for="item_number">Item Number</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="item_name" type="text" class="validate">
+          <label for="item_name">Item Name</label>
+        </div>
+		<div class="input-field col s6">
+          <input id="item_description" type="text" class="validate">
+          <label for="item_description">Item Description</label>
+        </div>
+      </div>
+      
