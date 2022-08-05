@@ -19,12 +19,12 @@ router.get("/item_add", async (req, res) => {
 
 // employee edit page
 router.get("/employee_edit", async (req, res) => {
-	res.render("employee_edit");
+	res.render("employees_edit");
 });
 
 // item edit page
 router.get("/item_edit", async (req, res) => {
-	res.render("item_edit");
+	res.render("items_edit");
 });
 
 // route to render the table of employees from the db
