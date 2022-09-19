@@ -36,11 +36,11 @@ The GitHub repo for this app can be found [HERE](https://github.com/Howardk97/In
 
 ## Project Demo
 
-![demo1](assets\screenshot1.png)
+![demo1](assets/screenshot1.png)
 
-![demo2](assets\screenshot2.png)
+![demo2](assets/screenshot2.png)
 
-![demo3](assets\screenshot3.png)
+![demo3](assets/screenshot3.png)
 
 ## Contributors
 
